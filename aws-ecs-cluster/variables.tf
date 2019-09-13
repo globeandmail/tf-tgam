@@ -1,11 +1,6 @@
-# required variables
-#
 variable "cluster_name" {
   description = "Name of the ECS cluster"
 }
-
-# optional variables
-#
 
 variable "ami" {
   description = "Name of the AMI image to use"
@@ -39,7 +34,7 @@ variable "security_group_ids" {
 }
 
 variable "subnet_ids" {
-  description = "list of subnet ids. By default takes all subnets from the VPC"
+  description = "list of subnet IDs"
   type        = list
   default     = []
 }
@@ -50,6 +45,6 @@ variable "spot" {
 }
 
 variable "vpc_id" {
-  description = "VPC ID"
+  description = "VPC id to use"
   default     = ""
 }
